@@ -6,7 +6,7 @@
 	"manufacturer": "AuraWave",
 	"products": ["Pbox"],
 	"keywords": ["Pbox"],
-	"version": "1.0.0",
+	"version": "0.0.0",
 	"license": "MIT",
 	"repository": "git+https://github.com/wupo1981/companion-module-aurawave-Pbox.git",
 	"bugs": "https://github.com/wupo1981/companion-module-aurawave-Pbox/issues",
