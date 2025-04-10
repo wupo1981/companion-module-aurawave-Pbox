@@ -1,0 +1,26 @@
+{
+	"id": "companion-module-Aurawave-Pbox",
+	"name": "companion-module-Aurawave-Pbox",
+	"shortname": "Pbox",
+	"description": "Esport Player Box",
+	"manufacturer": "AuraWave",
+	"products": ["Pbox"],
+	"keywords": ["Pbox"],
+	"version": "1.0.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/bitfocus/companion-module-fake-module.git",
+	"bugs": "https://github.com/bitfocus/companion-module-fake-module/issues",
+	"maintainers": [
+		{
+			"name": "Paul Wu",
+			"email": "pwu22@hotmail.com"
+		}
+	],
+	"legacyIds": [],
+	"runtime": {
+		"type": "node18",
+		"api": "nodejs-ipc",
+		"apiVersion": "1.11.2",
+		"entrypoint": "../index.js"
+	}
+}
