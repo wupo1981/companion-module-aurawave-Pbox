@@ -21,6 +21,6 @@
 		"type": "node18",
 		"api": "nodejs-ipc",
 		"apiVersion": "1.11.2",
-		"entrypoint": "../index.js"
+		"entrypoint": "../src/index.js"
 	}
 }
