@@ -36,6 +36,7 @@ class ModuleInstance extends InstanceBase {
 				label: 'Target IP',
 				width: 8,
 				regex: Regex.IP,
+				default: '192.168.66.1',
 			},
 			{
 				type: 'textinput',
