@@ -1,8 +1,11 @@
 {
-  "name": "companion-module-aurawave-Pbox",
+  "name": "Paul",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/wupo1981/companion-module-aurawave-Pbox.git",
   "author": "wupo1981 <wupo1981@hotmai.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@companion-module/base": "^1.11.3"
+  }
 }
