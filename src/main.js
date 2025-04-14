@@ -43,7 +43,24 @@ class ModuleInstance extends InstanceBase {
 				label: 'Target Port',
 				width: 4,
 				regex: Regex.PORT,
+				default: 80,
 			},
+			{
+				type: 'textinput',
+				id: 'username',
+				label: 'Username',
+				width: 8,
+				regex: Regex.username,
+				default: 'Admin',
+			},
+			{
+				type: 'textinput',
+				id: 'password',
+				label: 'Password',
+				width: 8,
+				regex: Regex.password,
+				default: 'Admin',
+			}
 		]
 	}
 
