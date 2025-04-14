@@ -31,6 +31,13 @@ class ModuleInstance extends InstanceBase {
 	getConfigFields() {
 		return [
 			{
+				type: 'static-text',
+				id: 'info',
+				width: 12,
+				label: 'Information',
+				value: 'This module will control an Aurawave Pbox.'
+			},
+			{
 				type: 'textinput',
 				id: 'host',
 				label: 'Target IP',
@@ -61,6 +68,56 @@ class ModuleInstance extends InstanceBase {
 				width: 8,
 				regex: Regex.password,
 				default: 'Admin',
+			},
+			{
+				type: 'static-text',
+				id: 'dummy1',
+				width: 12,
+				label: ' ',
+				value: ' ',
+			},
+			{
+				type: 'static-text',
+				id: 'info2',
+				label: 'Polling',
+				width: 12,
+				value: `
+					<div class="alert alert-warning">
+						<strong>Please read:</strong>
+						<br>
+						Enabling polling unlocks these features:
+						<br><br>
+						<ul>
+							<li>Changes made at the device outside of this module</li>
+							<li>Currently selected channel, feedbacks, etc.</li>
+						</ul>
+						Enabling polling will send a request to the Device at a continuous interval.
+						<br>
+						<strong>This could have an undesired performance effect on your Device, depending on the polling rate.</strong>
+						<br>
+					</div>
+				`
+			},
+			{
+				type: 'checkbox',
+				id: 'polling',
+				label: 'Enable Polling (necessary for feedbacks and variables)',
+				default: true,
+				width: 3
+			},
+			{
+				type: 'textinput',
+				id: 'pollingrate',
+				label: 'Polling Rate (in ms)',
+				default: 1000,
+				width: 3,
+				isVisible: (configValues) => configValues.polling === true,
+			},
+			{
+				type: 'checkbox',
+				id: 'verbose',
+				label: 'Enable Verbose Logging',
+				default: false
 			}
 		]
 	}
